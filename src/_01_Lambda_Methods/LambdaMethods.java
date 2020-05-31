@@ -62,7 +62,7 @@ public class LambdaMethods {
 			String noVowels = ""; 
 			
 			for (int i = 0; i < s.length(); i++) {
-				if (s.substring(i,i+1)!="a" && s.substring(i,i+1)!="e" && s.substring(i,i+1)!="i" && s.substring(i,i+1)!="o" && s.substring(i,i+1)!="u") {
+				if (s.charAt(i)!='a' && s.charAt(i)!='e' && s.charAt(i)!='i' && s.charAt(i)!='o' && s.charAt(i)!='u') {
 					noVowels+=s.charAt(i);
 				}
 			}
