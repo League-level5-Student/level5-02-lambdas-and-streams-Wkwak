@@ -14,12 +14,10 @@ public class StreamSearcher {
 		Stream<String> str = Arrays.stream(strArr);
 		// 3. Use the filter method with a lambda to extract all the String
 		// elements that match the String parameter.
-		int count = 0;
 
-		str.filter(s -> s.equals(strToCount)).forEach(count++);
+		str = str.filter(s -> s.equals(strToCount));
 
 		// 4. Return the count of the filtered stream.
-
-		return count;
+		return str.count();
 	}
 }
